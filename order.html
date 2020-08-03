@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>Customer Details</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="JosefinSans-Regular.ttf">
+<link rel="stylesheet" href="AmaticSC-Regular.ttf">
+<style>
+body, html {height: 100%}
+@font-face {
+font-family: "JosefinSans";
+src: url("JosefinSans-Regular.ttf");
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'AmaticSC', sans-serif}
+.menu {display: none}
+@font-face {
+font-family: "AmaticSC";
+src: url("AmaticSC-Regular.ttf");
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("pizza.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="menu.jsp" class="w3-bar-item w3-button">MENU</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="feedback.html" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="gallery.jsp" class="w3-bar-item w3-button">GALLERY</a>
+  </div>
+</div>
+  
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content"> 
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px;">Customer Details</h1>
+    <div style="font-family:JosefinSans">
+    <p style='text-align:center;' class="w3-xxlarge">Please provide us following details to process the order</p> 
+    
+        <form name="orderform" action="order.jsp" method="POST">
+            <style>
+                input,textarea{float:right;margin:5px;padding:5px;}
+                textarea,input[type=text]{width:450px;}
+                table{margin-left:15%;}
+            </style>
+             <table border="0" width="70%">
+                <tbody>
+                    <tr>
+                        <td width="50%">Name    :</td>
+                        <td width="50%"><input type="text" placeholder="your name" name="name" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td><textarea name="address" placeholder="delivery address" rows="4" cols="20"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Contact no :</td>
+                        <td><input type="text" placeholder="contact no" name="contactno" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" placeholder="email" name="email" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td><input type="date" placeholder="date" name="date" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Proceed to Billing" name="orderSubmitBtn" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        </div>
+    </div>
+  </div>
+
+    </body>
+</html>

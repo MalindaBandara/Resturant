@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Give Us Your Feedback!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="JosefinSans-Regular.ttf">
+<link rel="stylesheet" href="AmaticSC-Regular.ttf">
+<style>
+body, html {height: 100%}
+@font-face {
+font-family: "JosefinSans";
+src: url("JosefinSans-Regular.ttf");
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'AmaticSC', sans-serif}
+.menu {display: none}
+@font-face {
+font-family: "AmaticSC";
+src: url("AmaticSC-Regular.ttf");
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("pizza.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="menu.jsp" class="w3-bar-item w3-button">MENU</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="feedback.html" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="gallery.jsp" class="w3-bar-item w3-button">GALLERY</a>
+  </div>
+</div>
+  
+<div class="w3-container w3-padding-64 w3-dark-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content"> 
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px;">We love to hear your feedback!</h1>
+    <div style="font-family:JosefinSans">
+    <p style='text-align:center;' class="w3-xxlarge">Our restaurant always thrive to provide better service to our customers.<br/>Your constructive criticism helps us in achieving that vision!</p> 
+    <FORM NAME="ParameterPost" align="center" ACTION="feedback.jsp" METHOD="POST">
+<TABLE class="w3-table" style="margin: 0 auto;" ALIGN="CENTER" BORDER="0">
+    <TR>
+    <TD width="40%" ALIGN="CENTER">Name:</TD> 
+    <TD ALIGN="CENTER"> <INPUT TYPE="TEXT" placeholder="name" SIZE="40" NAME="Person"></TD>
+    </TR>
+   
+    <TR>
+    <TD ALIGN="CENTER">Email:</TD> 
+    <TD ALIGN="CENTER"> <INPUT TYPE="email" placeholder="email" SIZE="40" MAXLENGTH="40" NAME="emailaddress"></TD>
+    </TR>
+   
+   <TR>
+    <TD ALIGN="CENTER">Contact No:</TD> 
+    <TD ALIGN="CENTER"> <INPUT TYPE="TEXT" SIZE="40" placeholder="contact no" MAXLENGTH="10" NAME="number"></TD>
+    </TR>
+  
+    <TR>
+    <TD ALIGN="CENTER">How would you rate our Restuarent:</TD> 
+    <TD ALIGN="CENTER"> 
+    <INPUT TYPE="radio" NAME = "rating" VALUE = "Excellent"> Excellent 
+    <INPUT TYPE="radio" NAME = "rating" VALUE = "Good"> Good 
+    <INPUT TYPE="radio" NAME = "rating" VALUE = "Average" CHECKED> Average 
+    <INPUT TYPE="radio" NAME = "rating" VALUE = "Poor"> Poor 
+   
+    </TD>
+    </TR>
+   
+    <TR>
+    <TD ALIGN="CENTER">Comments or Suggestions:</TD> 
+    <TD ALIGN="CENTER"> 
+    <TEXTAREA ROWS="6" COLS="40" WRAP="PHYSICAL" Name="suggestions" placeholder="Enter Your Comment Here!"></TEXTAREA>
+    </TD>
+    </TR>
+    
+    
+    <TR>
+    
+    <TD ALIGN="center">
+    
+    </td> 
+    <td>
+            <INPUT TYPE="SUBMIT" VALUE="Send Comments" ALIGN="MIDDLE"> 
+        <INPUT TYPE="RESET" align="left" VALUE="Clear Form">
+    </TD>
+    </TR>
+   
+</FORM>
+    </div>
+  </div>
+</div>
+</body>
+</html>
